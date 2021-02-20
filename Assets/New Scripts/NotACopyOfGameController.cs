@@ -27,7 +27,7 @@ public class NotACopyOfGameController : MonoBehaviour
 
     void Update() {
         
-        if (gameOver && Input.GetMouseButtonDown(0)) {
+        if (gameOver && Input.GetButtonDown("Flap")) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
